@@ -1,10 +1,22 @@
 Resources: https://learning.oreilly.com/live-training/courses/docker-up-and-running/0636920271284/
-
+           |- https://gist.github.com/spkane/cf874d0cdc4af09309779a91f2bcaaea (Cheatsheet of Video)
+           |- https://docs.docker.com/engine/reference/builder/ (building DockerFile)
+           
 Commands:
 docker run --rm --name quantum -p 18080:8080 spkane/quantum-game:latest
 
-docker  stop quantum
+docker stop quantum (How to see stopped containers?)
+docker rm quantum
 docker container ls
 docker container prune
 
-How to see stopped containers?
+
+
+
+docker build -t ghitesh/balance_game:latest .
+docker push ghitesh/balance_game:latest
+
+docker export outyet-small -o export.tar
+
+docker search balance_game
+docker search ghitesh
