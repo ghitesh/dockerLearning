@@ -20,3 +20,7 @@ docker export outyet-small -o export.tar
 
 docker search balance_game
 docker search ghitesh
+
+docker run --rm -ti ghitesh/balance_game:latest /bin/sh
+*-ti* will run in tty, -i means interactive.
+*/bin/sh* in the end executes that command
