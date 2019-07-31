@@ -1,0 +1,15 @@
+Swarm commands:
+
+
+docker-machine ls
+or when inside swarm  -> docker node ls
+docker-machine env "machine"
+
+
+docker stack deploy -c docker-compose.yml getstartedlab
+
+docker stack ls
+docker stack ps getstartedlab
+
+docker node update --availability drain ijjda8kobkobebmcnhz4gv4rp
+docker node update --availability active ijjda8kobkobebmcnhz4gv4rp
